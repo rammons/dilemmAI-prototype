@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DilemmAI – Welcome</title>
+  <script>
+    function toggleButton() {
+      const checkbox = document.getElementById('agree');
+      const button = document.getElementById('begin');
+      button.disabled = !checkbox.checked;
+    }
+  </script>
+</head>
+<body>
+  <h1>DilemmAI</h1>
+  <p>DilemmAI is built for licensed helping professionals who navigate ethically complex situations.</p>
+  <p>It offers structured, thoughtful guidance grounded in nationally validated ethical decision-making models, the codes of ethics from major professional associations, relevant federal laws such as HIPAA, FERPA, and IDEA, and your state’s specific laws, licensing regulations, and board guidance.</p>
+  <p>DilemmAI enhances your judgment by helping you think ethically, act responsibly, and document clearly.</p>
+
+  <p><small>Disclaimer: DilemmAI is a decision support tool for licensed professionals. It does not collect or store any client information, nor does it constitute legal advice or replace your professional judgment. Please consult your supervisor or legal counsel when needed. <b>By using this tool, you agree to these terms.</b></small></p>
+
+  <input type="checkbox" id="agree" onclick="toggleButton()"> I agree to the terms<br><br>
+  <a href="screen1.html"><button id="begin" disabled>Begin</button></a>
+</body>
+</html>
